@@ -2,30 +2,19 @@
 
 int main()
 {
-	int n,i,a,num;
-	//int sumnum=0;
-	int rev=0;
 	
-	
-	printf("Enter the number to get reversed \n",num);
+	int i,num;
+	unsigned long int fact=1;
+	i=1;
+	printf("Enter any number but not beyond 34 \n");
 	scanf("%d",&num);
-	while(num!=0){
-		
 	
-	rev=rev*10;
-	rev=rev+num%10;
-   
-	num=num/10;
-//	sumnum=sumnum+rev%10;
-
+	while(i<=num){
+		fact=fact*i;
+			i++;
+	
+	
 	}
-	 printf("The reversed number is %d \n",rev);
-	 
-	 
-	
-	 
- //	printf("The sum of reversed numbers is %d",sumnum);
- //	scanf("%d",&sumnum);
-	 	
+	printf("The factorial of the given number is %d \n",fact);
 	return 0;
 }
